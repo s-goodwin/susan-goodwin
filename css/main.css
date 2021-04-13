@@ -1,0 +1,386 @@
+/****** BASE STYLES ******/
+
+body {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 1200px;
+}
+h1 {
+    font-family: 'Prata', serif;
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 50px;
+    
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h4 {
+    font-family: 'Prata', serif;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/****** HEADER ******/
+
+.header-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+header ul li a {
+    color:#000000;
+    text-decoration: none;
+}
+header .social-media ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+h1 a {
+    color:#000000;
+    text-decoration: none;
+}
+
+
+/****** INTRO SECTION ******/
+
+#intro .grid {
+    background-color: #e6d8d0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    height: 750px;
+}
+.img-camera, .img-portrait {
+    width: 100%;
+    display: block;
+}
+.img-camera {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+}
+.img-portrait {
+    grid-column: 3 / span 5;
+    grid-row: 1;
+    padding-top: 25%;
+    padding-left: 17%;
+    z-index: 1;
+}
+.text-box {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+    opacity: 20%;
+    padding-top: 21%;
+}
+.greeting {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+    padding-left: 10%;
+    padding-top: 20%;
+    z-index: 2;
+}
+#intro .text {
+    grid-column: 8 / span 6;
+    grid-row: 1;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 22px;
+    padding-top: 45%;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/****** PORTFOLIO ******/
+
+#portfolio h3 {
+    margin-bottom: -100px;
+    padding-top: 165px;
+    text-align: center;
+}
+#portfolio {
+    height: 900px;
+}
+#portfolio .grid {
+    align-items: center;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.jubilee {
+    background-color: #FFFFFF;
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+.vision-board {
+    background-color: #FFFFFF;
+    grid-column: 3 / span 1;
+    grid-row: 1;
+}
+.rogue-pickings {
+    background-color: #FFFFFF;
+    grid-column:  4 / span 1;
+    grid-row: 1;
+}
+.thumbnail img {
+    width: 300px;
+}
+.project-title, .project-description {
+    text-align: center;
+}
+.project-title {
+    padding-top: 66px;
+}
+.view-button {
+    padding-bottom: 80px;
+    text-align: center;
+    
+}
+button:hover {
+    opacity: 70%;
+}
+button:focus {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #000000;
+}
+button:active {
+    outline-color: #000000;
+}
+/* Removes focus styles for mouse users*/
+button:focus:not(:focus-visible) {
+    outline: none!important;
+}
+#portfolio button  {
+    background-color: #c5e1d1;
+    border: none;
+    height: 45px;
+    width: 100px;
+}
+.view {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.vision-board .view-button {
+    padding-top: 20%;
+}
+.rogue-pickings .view-button, .jubilee .view-button {
+    padding-top: 10%;
+}
+.background-bar {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    padding-top: 600px;
+    z-index: -1;
+}
+#portfolio .grid .jubilee {
+    width: 300px;
+}
+#portfolio .grid .vision-board {
+    width: 300px;
+}
+#portfolio .grid .rogue-pickings {
+    width: 300px;
+}
+
+/****** ABOUT ******/
+
+#about {
+    height: 825px;
+}
+#about .grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.about-text {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    margin-left: 40px;
+    padding-top: 85px;
+}
+.about-img-one {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+    padding-top: 160px;
+}
+.about-text p {
+    width: 400px;
+}
+
+
+/****** CONTACT ******/
+
+#contact {
+    background-color: #e6d8d0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 900px;
+    padding-top: 1px;
+}
+.contact-text h3 {
+    padding-top: 100px;
+}
+.my-email img {
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.my-email img, .my-email p {
+    display: inline-block;
+}
+.contact-text p {
+    width: 400px;
+}
+.contact-right {
+    margin-left: 40px;
+}
+
+
+/****** CONTACT FORM ******/
+
+.kwes-form {
+    margin-left: 60px;
+    margin-top: 100px;
+    width: 500px;
+}
+label, input, textarea, button .submit {
+    display: block;
+}
+.full-name  label {
+   display: inline-block;
+}
+label {
+    padding-bottom: 30px;
+}
+.first-name, .last-name {
+    width: 230px;
+}
+.first-name, .last-name, .email, .subject, .referral {
+    height: 30px;
+}
+.message {
+    height: 100px;
+}
+ .email, .subject, .referral, .message {
+    width: 470px;
+}
+
+#contact button {
+    margin-top: 10px;
+}
+.submit {
+    background-color: #c5e1d1;
+    border: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 174px;
+}
+.submit:hover {
+    opacity: 70%;
+}
+
+
+/****** FOOTER ******/
+
+.follow-me p {
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    padding-top: 130px;
+    text-align: center;
+}
+footer nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+footer ul li a {
+    color:#000000;
+    text-decoration: none;
+}
+footer .social-media ul li {
+    display: inline-block;
+    margin: auto;
+    padding-left: 10px;
+}
+footer nav {
+    text-align: center;
+}
+footer .social-media {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
