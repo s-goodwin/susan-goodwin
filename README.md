@@ -1,2 +1,2 @@
 # susan-goodwin
-static version of my portfolio site
+the original static version of my portfolio site
