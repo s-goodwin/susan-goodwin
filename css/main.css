@@ -243,87 +243,47 @@ button:focus:not(:focus-visible) {
 
 #contact {
     background-color: #e6d8d0;
-    display: flex;
-    justify-content: space-evenly;
-    height: 900px;
-    padding-top: 1px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.contact-text h3 {
-    padding-top: 100px;
+
+.contact-text {
+    text-align: center;
 }
+
 .my-email img {
     padding-right: 10px;
     padding-top: 20px;
 }
 .my-email img, .my-email p {
     display: inline-block;
+    
+}
+
+.my-email {
+    text-align: center;
 }
 .contact-text p {
     width: 400px;
-}
-.contact-right {
-    margin-left: 40px;
+    margin: 0 auto;
 }
 
 
-/****** CONTACT FORM ******/
 
-.kwes-form {
-    margin-left: 60px;
-    margin-top: 100px;
-    width: 500px;
-}
-label, input, textarea, button .submit {
-    display: block;
-}
-.full-name  label {
-   display: inline-block;
-}
-label {
-    padding-bottom: 30px;
-}
-.first-name, .last-name {
-    width: 230px;
-}
-.first-name, .last-name, .email, .subject, .referral {
-    height: 30px;
-}
-.message {
-    height: 100px;
-}
- .email, .subject, .referral, .message {
-    width: 470px;
-}
 
-#contact button {
-    margin-top: 10px;
-}
-.submit {
-    background-color: #c5e1d1;
-    border: none;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    height: 45px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 174px;
-}
-.submit:hover {
-    opacity: 70%;
-}
 
 
 /****** FOOTER ******/
 
+footer {
+    background-color: white;
+}
 .follow-me p {
     font-family: 'Prata', serif;
     font-size: 24px;
     letter-spacing: 1px;
     padding-bottom: 50px;
-    padding-top: 130px;
+    padding-top: 100px;
     text-align: center;
 }
 footer nav ul li {
